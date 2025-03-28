@@ -1,0 +1,83 @@
+{
+  "navbar": {
+    "it": ["Chi siamo", "Prenotazioni", "Orari", "Menu"],
+    "en": ["About Us", "Reservations", "Opening Hours", "Menu"],
+    "es": ["Quiénes somos", "Reservas", "Horarios", "Menú"]
+  },
+  "footer": {
+    "AdMSignature": {
+      "it": "Siti professionali e moderni",
+      "en": "Professional and modern websites",
+      "es": "Sitios web profesionales y modernos"
+    }
+  },
+  "homepage": {
+    "motto1": {
+      "it": "Schiava di un re.",
+      "en": "Slave of a king.",
+      "es": "Esclava de un rey."
+    },
+    "motto2": {
+      "it": "Padrona del proprio destino",
+      "en": "Master of her own destiny.",
+      "es": "Dueña de su propio destino."
+    },
+    "gallery1": {
+      "it": "Il ristorante Briseide nasce da un'amicizia, e, successivamente dalla voglia di mostrare ai suoi futuri ospiti che è ancora possibile portare a tavola sapori veri, sinceri.",
+      "en": "Briseide Restaurant was born from a friendship and, later, from the desire to show its future guests that it is still possible to bring authentic, sincere flavors to the table.",
+      "es": "El restaurante Briseide nació de una amistad y, posteriormente, del deseo de mostrar a sus futuros huéspedes que todavía es posible llevar a la mesa sabores auténticos y sinceros."
+    },
+    "gallery2": {
+      "it": "Grazie alla nostra esperienza, insieme ad Andrea, amico e rinomato chef internazionale, abbiamo lavorato alla nascita di Briseide.",
+      "en": "Thanks to our experience, together with Andrea, a dear friend and renowned international chef, we worked on bringing Briseide to life.",
+      "es": "Gracias a nuestra experiencia, junto con Andrea, amigo y reconocido chef internacional, trabajamos en la creación de Briseide."
+    },
+    "gallery3": {
+      "it": "Un percorso lungo, curato nei minimi dettagli. La nostra attenzione si è subito focalizzata sulla qualità e il tracciamento delle materie prime. Questo ci ha portato a selezionare personalmente i nostri fornitori instaurando una sinergia importante basata su sincerità etica e sostenibilità.",
+      "en": "A long journey, carefully crafted down to the finest details. Our focus has always been on the quality and traceability of raw ingredients. This commitment led us to personally select our suppliers, creating a meaningful synergy based on ethical sincerity and sustainability.",
+      "es": "Un largo recorrido, cuidado hasta el más mínimo detalle. Nuestra atención se centró inmediatamente en la calidad y la trazabilidad de las materias primas. Esto nos llevó a seleccionar personalmente a nuestros proveedores, creando una sinergia importante basada en la sinceridad ética y la sostenibilidad."
+    },
+    "gallery4": {
+      "it": "Questo modo di vivere i rapporti collaborativi e personali si sposa perfettamente con la nostra idea di cucina.",
+      "en": "This way of cultivating both professional and personal relationships aligns perfectly with our vision of cuisine.",
+      "es": "Esta forma de vivir las relaciones colaborativas y personales encaja perfectamente con nuestra idea de cocina."
+    },
+    "bookingBtn": {
+      "it": "Prenota un tavolo",
+      "en": "Book a table",
+      "es": "Reserva una mesa"
+    },
+    "whatsappBtn": {
+      "it": "Informazioni",
+      "en": "More info",
+      "es": "Información"
+    },
+    "openingHours": {
+      "it": ["Orari di apertura", "Pranzo", "Cena", "Domenica chiuso"],
+      "en": ["Opening hours", "Lunch", "Dinner", "Close on Sunday"],
+      "es": ["Horarios de apertura", "Almuerzo", "Cena", "Cerrado los domingos"]
+    }
+  },
+  "menu-tree": {
+    "portate": {
+      "it": "Portate",
+      "en": "Courses",
+      "es": "Platos"
+    },
+    "bevande": {
+      "it": "Bevande",
+      "en": "Drinks",
+      "es": "Bebidas"
+    },
+    "distillati": {
+      "it": "Distillati",
+      "en": "Spirits",
+      "es": "Destilados"
+    },
+    "vini": {
+      "it": "Vini",
+      "en": "Wines",
+      "es": "Vinos"
+    }
+  }
+}
