@@ -67,7 +67,7 @@ export default function Sidebar({ children }) {
             : sidebarIconAnimation.animate.closed
         }
         transition={sidebarIconAnimation.animate.transition}
-        className="absolute px-4"
+        className="absolute px-8 md:px-0"
       >
         <GiKnifeFork className="text-3xl text-primary" />
       </motion.div>
