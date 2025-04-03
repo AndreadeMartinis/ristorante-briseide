@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import img1 from "@/public/img/gallery1.jpg";
-import img2 from "@/public/img/gallery2.jpeg";
+import img2 from "@/public/img/gallery2.jpg";
 import img3 from "@/public/img/gallery3.jpg";
 import img4 from "@/public/img/gallery4.jpg";
 import { useTranslation } from "../hooks/useTranslation";
