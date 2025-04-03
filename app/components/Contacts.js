@@ -17,7 +17,7 @@ export default function Contacts() {
   return (
     <section
       id="contacts"
-      className="w-full py-12 px-4 bg-[url('/img/bg-gray-blue.jpg')] bg-cover bg-center bg-fixed text-center"
+      className="w-full py-12 px-4 bg-[url('/img/bg-gray-blue.jpg')] bg-cover bg-center text-center"
     >
       <div className="p-6 w-fit mx-auto bordered-box">
         <h2 className="font-cursive text-2xl md:text-4xl tracking-[.15em] text-primary">
