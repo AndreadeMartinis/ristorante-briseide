@@ -18,7 +18,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="bg-white flex align-middle z-0 h-screen md:h-[unset]"
+      className="bg-white flex align-middle z-0 h-screen pb-24 md:h-[unset]"
     >
       <video src="/hero.mp4" autoPlay muted playsInline className="" />
     </section>
