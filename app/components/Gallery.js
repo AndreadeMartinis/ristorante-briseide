@@ -27,7 +27,7 @@ export default function Gallery() {
             reverse ? "md:flex-row-reverse" : ""
           }`}
         >
-          <div className="relative w-full md:w-1/2 h-52 md:h-full overflow-hidden">
+          <div className="relative w-full md:w-1/2 h-64 md:h-full overflow-hidden">
             <Image
               fill
               className="object-cover"
