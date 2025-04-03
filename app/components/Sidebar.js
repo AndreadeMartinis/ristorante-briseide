@@ -69,7 +69,7 @@ export default function Sidebar({ children }) {
         transition={sidebarIconAnimation.animate.transition}
         className="absolute px-8 md:px-0"
       >
-        <GiKnifeFork className="text-3xl text-primary" />
+        <GiKnifeFork className="text-3xl text-primary hover:text-secondary transition-colors" />
       </motion.div>
     </motion.button>
   );

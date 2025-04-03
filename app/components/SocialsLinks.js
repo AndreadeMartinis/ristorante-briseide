@@ -8,7 +8,7 @@ export default function SocialIcons() {
         target="_blank"
         aria-label="Link Profilo Instagram"
         title="Seguici su Instagram!"
-        className="text-3xl md:text-2xl"
+        className="text-3xl"
       >
         <FaInstagram />
       </a>
