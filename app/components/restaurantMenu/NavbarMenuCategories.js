@@ -11,7 +11,7 @@ export default function NavbarMenuCategories({
   console.log(categories);
   return (
     <nav
-      className="fixed top-14 md:top-16 z-20 w-full flex md:justify-center gap-2 px-2 py-2 bg-secondary overflow-x-auto whitespace-nowrap border-t-2 border-primary border-b-2 border-b-white"
+      className="fixed top-14 md:top-16 z-20 w-full flex md:justify-center gap-2 px-2 py-2 bg-secondary overflow-x-auto whitespace-nowrap border-t-2 border-primary border-b-2 border-b-gray-300"
       role="tablist"
       aria-label="Navigazione menu ristorante"
     >

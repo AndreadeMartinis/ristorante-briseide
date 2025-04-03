@@ -59,7 +59,7 @@ export default function RestaurantMenu({ menuType }) {
       >
         <TabellaAllergeni />
       </Modal>
-      <div className="min-h-screen flex flex-col items-center px-2 pt-28 md:pt-32 pb-6 gap-8 overflow-hidden">
+      <div className="min-h-screen flex flex-col items-center px-2 pt-28 md:pt-32 pb-6 gap-8 overflow-hidden bg-[url('/img/bg-marble-white.jpg')] md:bg-none">
         {menuData.map(({ name, translation, items }) => (
           <MenuCategoryBox
             key={name}
