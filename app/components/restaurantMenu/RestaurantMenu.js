@@ -47,7 +47,7 @@ export default function RestaurantMenu({ menuType }) {
   if (error) return <p className="text-red-500">{error}</p>;
 
   return (
-    <main className="bg-[url('/img/bg-marble-white.jpg')] md:bg-none">
+    <main className="bg-[url('/img/bg-marble-white.jpg')] bg-contain md:bg-none">
       <NavbarMenuCategories
         categories={menuData}
         selectedCategory={selectedCategory}
