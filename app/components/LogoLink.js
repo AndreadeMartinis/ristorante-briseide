@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import icon from "@/app/icon.png";
+import icon from "../../public/icon.png";
 import siteConfig from "../config/site";
 import ROUTES from "../config/routes";
 
