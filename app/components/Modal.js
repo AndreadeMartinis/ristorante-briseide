@@ -38,7 +38,7 @@ export default function Modal({ isOpen, onClose, children }) {
             {...softFadeUpAnimation}
           >
             <button
-              className="absolute top-2 right-2 text-2xl font-extrabold px-3 py-1 text-primary hover:text-color"
+              className="absolute top-2 right-2 text-2xl font-extrabold px-3 py-1 text-primary hover:text-textColor"
               onClick={onClose}
               aria-label="Chiudi modale"
             >

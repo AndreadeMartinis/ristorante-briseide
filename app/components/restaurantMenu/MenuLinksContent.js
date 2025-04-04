@@ -22,7 +22,7 @@ function MenuButton({ href, children }) {
   return (
     <Link
       href={href}
-      className="relative flex justify-center items-center w-40 pl-4 py-2 border-2 border-primary outline outline-secondary bg-secondary text-color uppercase font-semibold tracking-widest shadow-md hover:scale-105"
+      className="relative flex justify-center items-center w-40 pl-4 py-2 border-2 border-primary outline outline-secondary bg-secondary text-textColor uppercase font-semibold tracking-widest shadow-md hover:scale-105"
     >
       {children}
     </Link>

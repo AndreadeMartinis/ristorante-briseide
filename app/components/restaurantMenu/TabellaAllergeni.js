@@ -36,7 +36,7 @@ function Row({ icon: Icon, title, subtitle, description, reverse }) {
         reverse ? "flex-row-reverse" : ""
       }`}
     >
-      <Icon className="text-3xl text-color" />
+      <Icon className="text-3xl text-textColor" />
       <div className="flex-1">
         <h4 className="font-bold text-sm">{title}</h4>
         {subtitle && <h5 className="text-[.7rem] italic">{subtitle}</h5>}
