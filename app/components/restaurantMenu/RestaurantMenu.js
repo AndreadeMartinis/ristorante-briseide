@@ -21,7 +21,7 @@ export default function RestaurantMenu({ menuType }) {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showAllergensModal, setShowAllergensModal] = useState(false);
 
-  const isLoading = useDelayedLoader(menuData.length > 0, 500);
+  const isLoading = useDelayedLoader(menuData.length > 0, 700);
 
   const RowComponent = {
     portate: RowPortate,

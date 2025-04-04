@@ -25,7 +25,7 @@ export default function NavbarMenuCategories({
           onClick={() => onSelect(name)}
           className={`px-2 py-1 text-sm font-semibold tracking-wider transition-colors duration-200 ${
             name === selectedCategory
-              ? "bg-primary text-white"
+              ? "bg-primary text-color"
               : "bg-white text-secondary hover:text-primary"
           }`}
         >
@@ -35,7 +35,7 @@ export default function NavbarMenuCategories({
       {categories[0].type === "portate" && (
         <button
           onClick={onAllergeniClick}
-          className="uppercase px-2 py-1 text-sm font-semibold tracking-wider transition-colors duration-200 text-white hover:text-secondary bg-primary hover:bg-white"
+          className="uppercase px-2 py-1 text-sm font-semibold tracking-wider transition-colors duration-200 text-color hover:text-secondary bg-primary hover:bg-white"
         >
           Allergeni
         </button>

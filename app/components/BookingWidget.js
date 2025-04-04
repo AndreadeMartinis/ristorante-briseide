@@ -19,7 +19,7 @@ export default function BookingWidget() {
 
   return (
     <a
-      className="quandoo-widget-builder flex items-center justify-center text-white uppercase w-fit bg-black"
+      className="quandoo-widget-builder flex items-center justify-center text-color uppercase w-fit bg-black"
       data-config='{"format":"text-button","bgcolor":"","txcolor":"","round":"no","position":"","font":"md","merchant":104128,"txt":"Prenota un tavolo"}'
     ></a>
   );

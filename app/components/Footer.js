@@ -15,7 +15,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center py-10 px-6 text-sm text-white bg-secondary border-t-2 outline outline-white border-primary">
+    <footer className="flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center py-10 px-6 text-sm text-color bg-secondary border-t-2 outline outline-white border-primary">
       {/* Sezione sinistra: contatti */}
       <section className="bordered-box p-5 relative w-[100%] md:w-[25%]">
         <div className="social-icons absolute top-4 right-4 hover:scale-110 hover:text-primary transition-all">

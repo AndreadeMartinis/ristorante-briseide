@@ -24,7 +24,7 @@ export default function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-primaryTransparent text-white hover:bg-primary hover:-translate-y-1 transition-all"
+      className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-primaryTransparent text-color hover:bg-primary hover:-translate-y-1 transition-all"
       aria-label="Torna su"
       title="Torna su"
     >
