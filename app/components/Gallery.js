@@ -30,7 +30,7 @@ export default function Gallery() {
           <div className="relative w-full md:w-1/2 h-64 md:h-full overflow-hidden">
             <Image
               fill
-              className="object-cover"
+              className={`object-cover ${reverse ? "brightness-75" : ""}`}
               src={img}
               alt={`piatto_${index + 1}`}
             />
