@@ -50,6 +50,7 @@ export default function RestaurantMenu({ menuType }) {
         selectedCategory={selectedCategory}
         onSelect={handleSelectCategory}
         onAllergeniClick={() => setShowAllergensModal(true)}
+        t={t}
       />
       <Modal
         isOpen={showAllergensModal}

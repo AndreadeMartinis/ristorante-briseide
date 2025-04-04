@@ -6,6 +6,7 @@ export default function NavbarMenuCategories({
   selectedCategory,
   onSelect,
   onAllergeniClick,
+  t,
 }) {
   if (!categories || categories.length === 0) return null;
   return (
@@ -37,7 +38,7 @@ export default function NavbarMenuCategories({
           onClick={onAllergeniClick}
           className="uppercase px-2 py-1 text-sm font-semibold tracking-wider transition-colors duration-200 text-textColor hover:text-secondary bg-primary hover:bg-white"
         >
-          Allergeni
+          {t("allergeni")}
         </button>
       )}
     </nav>

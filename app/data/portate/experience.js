@@ -1,6 +1,6 @@
 const categoryTranslation = {
-  en: "appetizers",
-  es: "entrantes",
+  en: "",
+  es: "",
 };
 
 const data = {

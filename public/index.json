@@ -84,5 +84,10 @@
     "it": "* I prodotti sono sottoposti a trattamento di bonifica preventiva tramite congelamento in conformità alla prescrizione del reg 1/aprile 22",
     "en": "* The products are subjected to preventive remediation treatment by freezing in accordance with the prescription of reg 1/April 22",
     "es": "* Los productos están sujetos a tratamiento preventivo de recuperación. mediante congelación de conformidad con lo prescrito en el reglamento 1/4 de abril 22"
+  },
+  "allergeni": {
+    "it": "Allergeni",
+    "en": "Allergens",
+    "es": "Alérgenos"
   }
 }
