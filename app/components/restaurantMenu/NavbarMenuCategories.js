@@ -8,7 +8,6 @@ export default function NavbarMenuCategories({
   onAllergeniClick,
 }) {
   if (!categories || categories.length === 0) return null;
-  console.log(categories);
   return (
     <nav
       className="fixed top-14 md:top-16 z-20 w-full flex md:justify-center gap-2 px-2 py-2 bg-secondary overflow-x-auto whitespace-nowrap border-t-2 border-primary border-b-2 border-b-gray-300"

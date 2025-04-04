@@ -4,11 +4,11 @@ import { useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useModalBehavior } from "@/app/hooks/useModalBehavior";
 
-const slideUpAnimation = {
-  initial: { y: 50, opacity: 0, scale: 0.95 },
-  animate: { y: 0, opacity: 1, scale: 1 },
-  exit: { y: 30, opacity: 0, scale: 0.95 },
-  transition: { type: "spring", duration: 0.3 },
+const softFadeUpAnimation = {
+  initial: { opacity: 0, y: 10 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 10 },
+  transition: { duration: 0.2 },
 };
 
 export default function Modal({ isOpen, onClose, children }) {
@@ -31,10 +31,11 @@ export default function Modal({ isOpen, onClose, children }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
         >
           <motion.div
             className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-white rounded-lg shadow-lg"
-            {...slideUpAnimation}
+            {...softFadeUpAnimation}
           >
             <button
               className="absolute top-2 right-2 text-2xl font-extrabold px-3 py-1 text-primary hover:text-white"

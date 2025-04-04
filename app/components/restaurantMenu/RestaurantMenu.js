@@ -11,11 +11,10 @@ import Modal from "../Modal";
 import TabellaAllergeni from "./TabellaAllergeni";
 
 export default function RestaurantMenu({ menuType }) {
-  const { language } = useTranslation();
+  const { t, language } = useTranslation();
   const { menuData, error } = useMenuData(menuType, language);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showAllergensModal, setShowAllergensModal] = useState(false);
-  console.log(menuType);
 
   const RowComponent = {
     portate: RowPortate,
@@ -76,9 +75,7 @@ export default function RestaurantMenu({ menuType }) {
       </div>
       {menuType === "portate" && (
         <p className="text-blue-950 italic text-sm text-center pb-5">
-          * I prodotti sono sottoposti a trattamento di bonifica preventiva
-          tramite congelamento in conformità alla prescrizione del reg 1/aprile
-          22
+          {t("disclaimer-surgelati")}
         </p>
       )}
     </main>

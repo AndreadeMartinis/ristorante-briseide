@@ -4,6 +4,7 @@ import { LanguageProvider } from "./hooks/useTranslation";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import siteConfig from "./config/site";
+import ScrollToTop from "./components/ScrollToTop";
 
 export const metadata = {
   title: siteConfig.name + " - " + siteConfig.slogan,
@@ -43,6 +44,7 @@ export default function RootLayout({ children }) {
         <LanguageProvider>
           <Header />
           {children}
+          <ScrollToTop />
           <Footer />
         </LanguageProvider>
       </body>
