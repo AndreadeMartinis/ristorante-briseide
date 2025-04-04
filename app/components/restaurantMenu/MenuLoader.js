@@ -3,7 +3,7 @@ import icon from "../../../public/icon.png";
 
 export default function MenuLoader() {
   return (
-    <div className="min-h-screen pt-20 md:pt-0 flex flex-col justify-center items-center gap-4 animate-pulse">
+    <div className="min-h-screen pt-12 md:pt-0 flex flex-col justify-center items-center gap-4 animate-pulse">
       <Image
         src={icon}
         alt="Logo ristorante"
