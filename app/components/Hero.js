@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 export default function Hero() {
-  useEffect(() => {
+  /* useEffect(() => {
     if (typeof window !== "undefined" && window.location.hash) {
       const id = window.location.hash.replace("#", "");
       const element = document.getElementById(id);
@@ -13,7 +13,7 @@ export default function Hero() {
         }, 200);
       }
     }
-  }, []);
+  }, []); */
 
   return (
     <section

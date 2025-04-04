@@ -15,6 +15,7 @@ export default function RestaurantMenu({ menuType }) {
   const { menuData, error } = useMenuData(menuType, language);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showAllergensModal, setShowAllergensModal] = useState(false);
+  console.log(menuType);
 
   const RowComponent = {
     portate: RowPortate,
@@ -46,7 +47,7 @@ export default function RestaurantMenu({ menuType }) {
   if (error) return <p className="text-red-500">{error}</p>;
 
   return (
-    <>
+    <main className="bg-[url('/img/bg-marble-white.jpg')] md:bg-none">
       <NavbarMenuCategories
         categories={menuData}
         selectedCategory={selectedCategory}
@@ -59,7 +60,7 @@ export default function RestaurantMenu({ menuType }) {
       >
         <TabellaAllergeni />
       </Modal>
-      <div className="min-h-screen flex flex-col items-center px-2 pt-28 md:pt-32 pb-6 gap-8 overflow-hidden bg-[url('/img/bg-marble-white.jpg')] md:bg-none">
+      <div className="min-h-screen flex flex-col items-center px-2 pt-28 md:pt-32 pb-6 gap-8 overflow-hidden ">
         {menuData.map(({ name, translation, items }) => (
           <MenuCategoryBox
             key={name}
@@ -73,7 +74,14 @@ export default function RestaurantMenu({ menuType }) {
           />
         ))}
       </div>
-    </>
+      {menuType === "portate" && (
+        <p className="text-blue-950 italic text-sm text-center pb-5">
+          * I prodotti sono sottoposti a trattamento di bonifica preventiva
+          tramite congelamento in conformità alla prescrizione del reg 1/aprile
+          22
+        </p>
+      )}
+    </main>
   );
 }
 

@@ -4,6 +4,7 @@ export const MENU_CATEGORIES = {
     path: "portate",
     type: "portate",
     categories: [
+      "experience",
       "crudites",
       "antipasti",
       "primi",
