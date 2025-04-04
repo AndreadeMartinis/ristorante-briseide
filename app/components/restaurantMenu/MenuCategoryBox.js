@@ -15,7 +15,7 @@ export default function MenuCategoryBox({
       role={role}
       className="shrink-0 w-full flex justify-center"
     >
-      <div className="w-full md:w-2/3 md:text-xl p-3 border-2 border-white outline outline-primary bg-secondary">
+      <div className="w-full md:w-2/3 md:text-xl p-3 border-2 border-white outline outline-primary bg-secondary text-textColor">
         <h2 className="text-2xl md:text-4xl tracking-wider uppercase mb-4">
           {category}
         </h2>

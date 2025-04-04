@@ -19,7 +19,7 @@ export default function Contacts() {
       id="contacts"
       className="w-full py-12 px-4 bg-[url('/img/bg-gray-blue.jpg')] md:bg-fixed bg-cover bg-center text-center"
     >
-      <div className="p-6 w-fit mx-auto bordered-box">
+      <div className="p-6 w-fit mx-auto bordered-box text-textColor">
         <h2 className="font-cursive text-2xl md:text-4xl tracking-[.15em] text-primary">
           {siteConfig.name.split(" ")[0]}
         </h2>
@@ -71,7 +71,7 @@ export default function Contacts() {
       {/* Orari di apertura */}
       <div
         id="opening-hours"
-        className="bordered-box p-4 my-6 inline-block font-semibold"
+        className="bordered-box p-4 my-6 inline-block font-semibold text-textColor"
       >
         <h5 className="md:text-3xl mb-4">{t("homepage.openingHours")[0]}</h5>
         <div className="orari flex justify-center md:text-2xl">

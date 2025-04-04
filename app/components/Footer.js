@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center py-10 px-6 text-sm text-color bg-secondary border-t-2 outline outline-white border-primary">
       {/* Sezione sinistra: contatti */}
-      <section className="bordered-box p-5 relative w-[100%] md:w-[25%]">
+      <section className="bordered-box p-5 relative w-[100%] md:w-[25%] text-textColor">
         <div className="social-icons absolute top-4 right-4 hover:scale-110 hover:text-primary transition-all">
           <a
             href={siteConfig.social.instagram}
@@ -46,7 +46,7 @@ export default function Footer() {
       </section>
 
       {/* Sezione destra: firma sviluppatore */}
-      <section className="flex flex-col justify-center items-center gap-3 bordered-box p-5 w-[100%] md:w-[25%]">
+      <section className="flex flex-col justify-center items-center gap-3 bordered-box p-5 w-[100%] md:w-[25%] text-textColor">
         <p>
           Made by
           <span className="hover:scale-110 hover:text-primary transition-all">
