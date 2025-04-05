@@ -2,6 +2,7 @@ import { capitalizeFirstLetter } from "@/app/utils/string";
 
 export default function RowWine({ name, details, language }) {
   const label = capitalizeFirstLetter(name);
+  console.log(label);
   const anno = details.anno;
   const prezzoBott = details.prezzoBottiglia;
   const prezzoCal = details.prezzoCalice;

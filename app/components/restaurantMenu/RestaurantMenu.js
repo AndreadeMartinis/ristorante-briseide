@@ -64,7 +64,7 @@ export default function RestaurantMenu({ menuType }) {
             key={name}
             id={`menu-section-${name}`}
             role="tabpanel"
-            category={translation}
+            category={translation.replace("-", " ")}
             items={items}
             language={language}
             Row={RowComponent}
