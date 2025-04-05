@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "@/app/hooks/useTranslation";
 import { useMenuData } from "@/app/hooks/useMenuData";
 import { useDelayedLoader } from "@/app/hooks/useDelayedLoader";
-import { scrollToMenuSection } from "@/app/hooks/useScrollToMenuSection";
 import { getMenuType } from "@/app/utils/menu";
+import { motion } from "framer-motion";
 import RowPortate from "./RowPortate";
 import RowDrink from "./RowDrink";
 import RowWine from "./RowWine";
@@ -13,7 +13,6 @@ import Modal from "../Modal";
 import TabellaAllergeni from "./TabellaAllergeni";
 import MenuLoader from "./MenuLoader";
 import MenuCategoryBox from "./MenuCategoryBox";
-import { motion } from "framer-motion";
 
 export default function RestaurantMenu({ menuType }) {
   const { t, language } = useTranslation();
@@ -35,11 +34,6 @@ export default function RestaurantMenu({ menuType }) {
     }
   }, [menuData, selectedCategory]);
 
-  const handleSelectCategory = (name) => {
-    setSelectedCategory(name);
-    scrollToMenuSection(name);
-  };
-
   if (error) return <p className="text-red-500">{error}</p>;
   if (isLoading) return <MenuLoader />;
 
@@ -48,10 +42,11 @@ export default function RestaurantMenu({ menuType }) {
       <NavbarMenuCategories
         categories={menuData}
         selectedCategory={selectedCategory}
-        onSelect={handleSelectCategory}
+        onSectionChange={setSelectedCategory}
         onAllergeniClick={() => setShowAllergensModal(true)}
         t={t}
       />
+
       <Modal
         isOpen={showAllergensModal}
         onClose={() => setShowAllergensModal(false)}

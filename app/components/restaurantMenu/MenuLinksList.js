@@ -2,9 +2,14 @@ import Link from "next/link";
 import menuLinks from "@/app/config/restaurantMenuLinks";
 
 export default function MenuLinksList({ pathname, t }) {
+  const isHome = pathname === "/";
+
   return (
     <li>
-      <details className="cursor-pointer group">
+      <details
+        className="cursor-pointer group"
+        {...(!isHome && { open: true })}
+      >
         <summary className="list-none hover:text-primary group-open:text-primary">
           {t("navbar")[3]}
         </summary>

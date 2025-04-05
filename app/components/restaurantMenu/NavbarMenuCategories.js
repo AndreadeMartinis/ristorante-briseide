@@ -1,14 +1,36 @@
 "use client";
+import { useEffect } from "react";
+import { useScrollSpy } from "@/app/hooks/useScrollSpy";
 import { capitalizeFirstLetter } from "@/app/utils/string";
 
 export default function NavbarMenuCategories({
   categories,
   selectedCategory,
-  onSelect,
+  onSectionChange,
   onAllergeniClick,
   t,
 }) {
+  const sectionIds = categories.map(({ name }) => `menu-section-${name}`);
+  const activeId = useScrollSpy(sectionIds);
+
+  useEffect(() => {
+    if (activeId) {
+      const id = activeId.replace("menu-section-", "");
+      if (id !== selectedCategory) {
+        onSectionChange(id);
+      }
+    }
+  }, [activeId, selectedCategory, onSectionChange]);
+
+  const handleClick = (name) => {
+    const el = document.getElementById(`menu-section-${name}`);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   if (!categories || categories.length === 0) return null;
+
   return (
     <nav
       className="fixed top-14 md:top-16 z-20 w-full flex md:justify-center gap-2 px-2 py-2 bg-secondary overflow-x-auto whitespace-nowrap border-t-2 border-primary border-b-2 border-b-gray-300 text-textColor"
@@ -23,7 +45,7 @@ export default function NavbarMenuCategories({
           aria-label={`Vai alla sezione ${translation}`}
           aria-controls={`menu-section-${name}`}
           tabIndex={name === selectedCategory ? 0 : -1}
-          onClick={() => onSelect(name)}
+          onClick={() => handleClick(name)}
           className={`px-2 py-1 text-sm font-semibold tracking-wider transition-colors duration-200 ${
             name === selectedCategory
               ? "bg-primary text-textColor"
@@ -33,7 +55,8 @@ export default function NavbarMenuCategories({
           {capitalizeFirstLetter(translation)}
         </button>
       ))}
-      {categories[0].type === "portate" && (
+
+      {categories[0]?.type === "portate" && (
         <button
           onClick={onAllergeniClick}
           className="uppercase px-2 py-1 text-sm font-semibold tracking-wider transition-colors duration-200 text-textColor hover:text-secondary bg-primary hover:bg-white"
