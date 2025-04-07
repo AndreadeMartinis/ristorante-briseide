@@ -17,7 +17,7 @@ export default function Header() {
   const isHome = pathname === "/";
 
   const headerClass =
-    "fixed top-0 flex justify-between items-center h-14 md:h-16 px-2 md:px-6 w-full z-50 bg-white/85 shadow-md";
+    "fixed top-0 flex justify-between items-center h-14 md:h-16 px-2 md:px-6 w-full z-50 bg-white/65 shadow-md backdrop-blur";
 
   const animatedProps = {
     initial: { y: "-100%", opacity: 0 },

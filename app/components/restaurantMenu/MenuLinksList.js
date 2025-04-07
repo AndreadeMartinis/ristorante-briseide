@@ -4,7 +4,7 @@ import menuLinks from "@/app/config/restaurantMenuLinks";
 export default function MenuLinksList({ pathname, t }) {
   return (
     <li>
-      <details className="cursor-pointer group">
+      <details className="cursor-pointer group" open={pathname !== "/"}>
         <summary className="list-none hover:text-primary group-open:text-primary">
           {t("navbar")[3]}
         </summary>

@@ -44,7 +44,7 @@ export default function RestaurantMenu({ menuType }) {
   if (isLoading) return <MenuLoader />;
 
   return (
-    <main className="bg-[url('/img/bg-marble-white.jpg')] bg-contain md:bg-none">
+    <main className="mt-24 bg-[url('/img/bg-marble-white.jpg')] bg-contain md:bg-none">
       <NavbarMenuCategories
         categories={menuData}
         selectedCategory={selectedCategory}
@@ -59,7 +59,7 @@ export default function RestaurantMenu({ menuType }) {
         <TabellaAllergeni />
       </Modal>
       <motion.div
-        className="min-h-screen flex flex-col items-center px-2 pt-28 md:pt-32 pb-6 gap-8 overflow-hidden"
+        className="min-h-screen  flex flex-col items-center px-2 pt-4 md:pt-7 pb-6 gap-8 overflow-hidden bg-black/5"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
@@ -69,7 +69,7 @@ export default function RestaurantMenu({ menuType }) {
             key={name}
             id={`menu-section-${name}`}
             role="tabpanel"
-            category={translation}
+            category={translation.replace("-", " ")}
             items={items}
             language={language}
             Row={RowComponent}
@@ -78,7 +78,7 @@ export default function RestaurantMenu({ menuType }) {
         ))}
       </motion.div>
       {menuType === "portate" && (
-        <p className="text-blue-950 italic text-sm text-center pb-5">
+        <p className="text-blue-950 italic text-[.75rem] text-center pb-5 bg-black/5 font-medium">
           {t("disclaimer-surgelati")}
         </p>
       )}

@@ -30,7 +30,7 @@ export default function NavbarMenuCategories({
               : "bg-white text-secondary hover:text-primary"
           }`}
         >
-          {capitalizeFirstLetter(translation)}
+          {capitalizeFirstLetter(translation).replace("-", " ")}
         </button>
       ))}
       {categories[0].type === "portate" && (

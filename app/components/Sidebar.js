@@ -84,13 +84,13 @@ export default function Sidebar({ children }) {
             {/* Overlay scuro */}
             <motion.div
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 bg-black z-30"
+              className="absolute h-screen inset-0 bg-black z-30  backdrop-blur"
               {...sidebarOverlayAnimation}
             />
 
             <motion.aside
               ref={menuRef}
-              className="fixed top-0 right-0 h-screen w-36 md:w-52 bg-white shadow-lg z-40 flex flex-col items-center justify-start p-2 gap-2 text-secondary text-center overflow-auto "
+              className="fixed top-0 right-0 h-screen w-36 md:w-52 bg-white shadow-lg z-40 flex flex-col items-center justify-start p-2 gap-2 text-secondary text-center overflow-auto"
               {...sidebarPanelAnimation}
             >
               {children}
