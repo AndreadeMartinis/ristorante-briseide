@@ -5,7 +5,7 @@ export default function TabellaAllergeni() {
   const { language } = useTranslation();
 
   return (
-    <section className="flex flex-col justify-center items-center p-4 bg-secondary">
+    <section className="flex flex-col justify-center items-center p-4 bg-secondary text-textColor md:px-20">
       <h2 className="uppercase tracking-widest text-2xl md:text-4xl md:mb-2 font-bold text-center">
         {header[`title_${language}`] || header.title}
       </h2>
