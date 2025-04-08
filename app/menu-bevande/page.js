@@ -1,4 +1,5 @@
 import RestaurantMenu from "../components/restaurantMenu/RestaurantMenu";
+import SeoParagraph from "../components/SeoParagraph";
 
 export const metadata = {
   title: "Menu Bevande - Briseide",
@@ -7,5 +8,9 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <RestaurantMenu menuType={"bevande"} />;
+  return (
+    <RestaurantMenu menuType="bevande">
+      <SeoParagraph path="menuDescriptions.bevande" />
+    </RestaurantMenu>
+  );
 }

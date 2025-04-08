@@ -7,6 +7,7 @@ import { RiSmartphoneFill } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa6";
 import { useTranslation } from "../hooks/useTranslation";
 import siteConfig from "../config/site";
+import SeoParagraph from "./SeoParagraph";
 
 export default function Contacts() {
   const { t } = useTranslation();
@@ -29,6 +30,8 @@ export default function Contacts() {
         <h2 className="font-cursive text-2xl md:text-5xl md:my-8 my-3 tracking-[.15em] text-primary">
           {siteConfig.slogan}
         </h2>
+        <SeoParagraph path="homepage.seoDescription" />
+
         <p className="address text-sm md:text-2xl uppercase tracking-wider">
           {siteConfig.address.full}
         </p>

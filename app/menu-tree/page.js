@@ -1,4 +1,5 @@
 import MenuLinksContent from "../components/restaurantMenu/MenuLinksContent";
+import SeoParagraph from "../components/SeoParagraph";
 
 export const metadata = {
   title: "I nostri menu – Briseide",
@@ -7,5 +8,9 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <MenuLinksContent />;
+  return (
+    <MenuLinksContent>
+      <SeoParagraph path="menuTreeDescription" />
+    </MenuLinksContent>
+  );
 }

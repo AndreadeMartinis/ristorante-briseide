@@ -99,5 +99,37 @@
     "it": "Allergeni",
     "en": "Allergens",
     "es": "Alérgenos"
+  },
+  "seoDescription": {
+    "it": "Ristorante a Balduina, Roma Nord. Briseide propone cucina di pesce fresco, carne selezionata e vini italiani in un ambiente raffinato. Ideale per pranzi veloci o cene romantiche a Roma.",
+    "en": "Restaurant in Balduina, North Rome. Briseide offers fresh seafood, selected meats and Italian wines in a refined atmosphere. Perfect for a quick lunch or romantic dinner in Rome.",
+    "es": "Restaurante en Balduina, Roma Norte. Briseide ofrece pescado fresco, carnes seleccionadas y vinos italianos en un ambiente refinado. Ideal para almuerzos rápidos o cenas románticas en Roma."
+  },
+  "menuTreeDescription": {
+    "it": "Scopri il menù completo del Ristorante Briseide: portate di carne e pesce, vini italiani e internazionali, distillati selezionati e bevande. Tutto pensato per un'esperienza culinaria autentica a Roma Balduina.",
+    "en": "Explore the full menu of Ristorante Briseide: meat and seafood courses, Italian and international wines, selected spirits and drinks. Everything designed for a genuine culinary experience in Rome's Balduina district.",
+    "es": "Descubre el menú completo de Ristorante Briseide: platos de carne y pescado, vinos italianos e internacionales, destilados seleccionados y bebidas. Todo pensado para una experiencia culinaria auténtica en Balduina, Roma."
+  },
+  "menuDescriptions": {
+    "portate": {
+      "it": "Scopri il nostro menù: antipasti, primi piatti, secondi e contorni preparati con ingredienti freschi e selezionati. Cucina italiana a Balduina, Roma.",
+      "en": "Discover our menu: appetizers, pasta, main courses and sides made with fresh, selected ingredients. Italian cuisine in Balduina, Rome.",
+      "es": "Descubre nuestro menú: entrantes, pastas, platos principales y guarniciones elaboradas con ingredientes frescos y seleccionados. Cocina italiana en Balduina, Roma."
+    },
+    "vini": {
+      "it": "La nostra carta dei vini propone una selezione accurata di etichette italiane e internazionali: bianchi freschi, rossi strutturati, champagne, bollicine e vini da dessert. Ogni vino è scelto per accompagnare al meglio i piatti del ristorante.",
+      "en": "Our wine list offers a carefully curated selection of Italian and international labels: crisp whites, full-bodied reds, champagne, sparkling wines and dessert wines. Each bottle is chosen to perfectly pair with our menu.",
+      "es": "Nuestra carta de vinos ofrece una selección cuidada de etiquetas italianas e internacionales: blancos frescos, tintos con cuerpo, champanes, espumosos y vinos de postre. Cada vino está seleccionado para acompañar nuestros platos."
+    },
+    "bevande": {
+      "it": "Bevande analcoliche, succhi, soft drink e acque minerali: una selezione curata per soddisfare ogni esigenza. Scoprile da Briseide.",
+      "en": "Non-alcoholic drinks, juices, soft drinks and mineral waters: a curated selection to suit every taste. Discover them at Briseide.",
+      "es": "Bebidas sin alcohol, zumos, refrescos y aguas minerales: una selección cuidada para todos los gustos. Descúbrelas en Briseide."
+    },
+    "spirits": {
+      "it": "Una selezione di distillati, liquori e gin tonic pensata per concludere il pasto o per un dopocena raffinato. Whisky scozzesi, rum pregiati, cognac, grappe e cocktail della casa: Briseide offre una carta pensata per veri intenditori.",
+      "en": "A curated selection of spirits, liqueurs and gin tonics to enjoy after dinner or to end your meal in style. Scotch whiskies, fine rums, cognacs, grappas and house cocktails: Briseide offers a list designed for true connoisseurs.",
+      "es": "Una selección de destilados, licores y gin tonics para disfrutar después de la cena o para concluir la comida con elegancia. Whiskies escoceses, rones selectos, coñacs, grappas y cócteles de la casa: Briseide ofrece una carta pensada para auténticos conocedores."
+    }
   }
 }

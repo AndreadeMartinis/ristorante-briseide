@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import siteConfig from "./config/site";
 import ScrollToTop from "./components/ScrollToTop";
+import SeoSchema from "./components/SeoSchema";
 
 export const metadata = {
   title: siteConfig.name + " - " + siteConfig.slogan,
@@ -38,6 +39,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang={siteConfig.defaultLanguage}>
+      <head>
+        <SeoSchema />
+      </head>
       <body
         className={`${fontCursive.variable} ${fontText.variable} ${fontMenuRow.variable} antialiased`}
       >
