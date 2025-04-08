@@ -37,4 +37,9 @@ export const MENU_CATEGORIES = {
       "dolci",
     ],
   },
+  special: {
+    path: "special",
+    type: "special",
+    categories: ["menu-pasquale"],
+  },
 };

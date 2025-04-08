@@ -19,7 +19,11 @@ export default function MenuCategoryBox({
         <h2 className="text-2xl md:text-4xl tracking-wider uppercase mb-4">
           {category}
         </h2>
-        <div className="p-2 md:p-8 flex flex-col gap-4">
+        <div
+          className={`p-2 md:p-8 flex flex-col gap-4 ${
+            menuType === "special" ? "justify-center items-center" : ""
+          }`}
+        >
           {menuType === "vini" && (
             <div className="flex">
               <div className="w-3/5"></div>

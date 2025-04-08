@@ -1,5 +1,3 @@
-// config/routes.js
-
 const ROUTES = {
   home: "/",
 
@@ -16,6 +14,7 @@ const ROUTES = {
     bevande: "/menu-bevande",
     spirits: "/menu-spirits",
     vini: "/menu-vini",
+    special: "/menu-special",
   },
 };
 

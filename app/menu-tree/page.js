@@ -1,7 +1,7 @@
 import MenuLinksContent from "../components/restaurantMenu/MenuLinksContent";
 
 export const metadata = {
-  title: "I nostri menu – Ristorante Briseide",
+  title: "I nostri menu – Briseide",
   description:
     "Scopri tutti i nostri menu: pranzo, cena, bevande, spirits e vini. Scegli cosa gustare al Ristorante Briseide.",
 };

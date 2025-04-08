@@ -1,4 +1,4 @@
-import { BiDish, BiDrink } from "react-icons/bi";
+import { BiDish, BiDrink, BiGift } from "react-icons/bi";
 import { LuGlassWater } from "react-icons/lu";
 import { PiWine } from "react-icons/pi";
 import ROUTES from "./routes";
@@ -23,6 +23,11 @@ const menuLinks = [
     key: "vini",
     icon: PiWine,
     href: ROUTES.menu.vini,
+  },
+  {
+    key: "special",
+    icon: BiGift,
+    href: ROUTES.menu.special,
   },
 ];
 

@@ -78,6 +78,11 @@
       "it": "Vini",
       "en": "Wines",
       "es": "Vinos"
+    },
+    "special": {
+      "it": "Pasqua",
+      "en": "Easter",
+      "es": "Pascua"
     }
   },
   "disclaimer-surgelati": {

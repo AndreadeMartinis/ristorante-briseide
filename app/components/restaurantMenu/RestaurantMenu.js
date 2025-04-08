@@ -14,6 +14,7 @@ import TabellaAllergeni from "./TabellaAllergeni";
 import MenuLoader from "./MenuLoader";
 import MenuCategoryBox from "./MenuCategoryBox";
 import { motion } from "framer-motion";
+import RowSpecial from "./RowSpecial";
 
 export default function RestaurantMenu({ menuType }) {
   const { t, language } = useTranslation();
@@ -27,6 +28,7 @@ export default function RestaurantMenu({ menuType }) {
     portate: RowPortate,
     drinks: RowDrink,
     vini: RowWine,
+    special: RowSpecial,
   }[getMenuType(menuType)];
 
   useEffect(() => {
@@ -44,14 +46,20 @@ export default function RestaurantMenu({ menuType }) {
   if (isLoading) return <MenuLoader />;
 
   return (
-    <main className="mt-24 bg-[url('/img/bg-marble-white.jpg')] bg-contain md:bg-none">
-      <NavbarMenuCategories
-        categories={menuData}
-        selectedCategory={selectedCategory}
-        onSelect={handleSelectCategory}
-        onAllergeniClick={() => setShowAllergensModal(true)}
-        t={t}
-      />
+    <main
+      className={`bg-[url('/img/bg-marble-white.jpg')] bg-contain md:bg-none ${
+        menuType === "special" ? "mt-12" : "mt-24"
+      }`}
+    >
+      {menuType !== "special" && (
+        <NavbarMenuCategories
+          categories={menuData}
+          selectedCategory={selectedCategory}
+          onSelect={handleSelectCategory}
+          onAllergeniClick={() => setShowAllergensModal(true)}
+          t={t}
+        />
+      )}
       <Modal
         isOpen={showAllergensModal}
         onClose={() => setShowAllergensModal(false)}
@@ -59,7 +67,7 @@ export default function RestaurantMenu({ menuType }) {
         <TabellaAllergeni />
       </Modal>
       <motion.div
-        className="min-h-screen  flex flex-col items-center px-2 pt-4 md:pt-7 pb-6 gap-8 overflow-hidden bg-black/5"
+        className="min-h-screen flex flex-col gap-8 items-center px-2 pt-4 md:pt-7 pb-6 overflow-hidden bg-black/5"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
