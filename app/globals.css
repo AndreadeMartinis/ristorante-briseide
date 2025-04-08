@@ -91,8 +91,11 @@ html::-webkit-scrollbar-thumb {
   outline: 2px solid var(--text-color);
   background-color: var(--secondary-color);
 }
-.bordered-box:last-child span {
+.rowspecial:last-child span {
   display: none;
+}
+.rowspecial:last-child p {
+  font-style: italic;
 }
 
 .whatsapp-button,
