@@ -1,7 +1,8 @@
-import { BiDish, BiDrink, BiGift } from "react-icons/bi";
+import { BiDish, BiDrink } from "react-icons/bi";
 import { LuGlassWater } from "react-icons/lu";
 import { PiWine } from "react-icons/pi";
 import ROUTES from "./routes";
+import { GiEasterEgg } from "react-icons/gi";
 
 const menuLinks = [
   {
@@ -26,7 +27,7 @@ const menuLinks = [
   },
   {
     key: "special",
-    icon: BiGift,
+    icon: GiEasterEgg,
     href: ROUTES.menu.special,
   },
 ];
