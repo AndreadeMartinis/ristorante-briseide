@@ -41,6 +41,10 @@ export default function RootLayout({ children }) {
     <html lang={siteConfig.defaultLanguage}>
       <head>
         <SeoSchema />
+        <meta
+          name="google-site-verification"
+          content="w844wFy3UC767SOXheh-FcB0lpLU3JAjkpUNb7bMAI0"
+        />
       </head>
       <body
         className={`${fontCursive.variable} ${fontText.variable} ${fontMenuRow.variable} antialiased`}
