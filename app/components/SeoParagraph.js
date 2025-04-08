@@ -1,5 +1,5 @@
 "use client";
-import { useTranslation } from "@/lib/useTranslation";
+import { useTranslation } from "../hooks/useTranslation";
 
 export default function SeoParagraph({ path }) {
   const { t } = useTranslation();
