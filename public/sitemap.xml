@@ -7,15 +7,18 @@
     <loc>https://www.ristorantebriseide.it/menu-tree</loc>
   </url>
   <url>
-    <loc>https://www.ristorantebriseide.it/menu/portate</loc>
+    <loc>https://www.ristorantebriseide.it/menu-portate</loc>
   </url>
   <url>
-    <loc>https://www.ristorantebriseide.it/menu/bevande</loc>
+    <loc>https://www.ristorantebriseide.it/menu-bevande</loc>
   </url>
   <url>
-    <loc>https://www.ristorantebriseide.it/menu/spirits</loc>
+    <loc>https://www.ristorantebriseide.it/menu-spirits</loc>
   </url>
   <url>
-    <loc>https://www.ristorantebriseide.it/menu/vini</loc>
+    <loc>https://www.ristorantebriseide.it/menu-vini</loc>
+  </url>
+  <url>
+    <loc>https://www.ristorantebriseide.it/menu-special</loc>
   </url>
 </urlset>
