@@ -131,5 +131,17 @@
       "en": "A curated selection of spirits, liqueurs and gin tonics to enjoy after dinner or to end your meal in style. Scotch whiskies, fine rums, cognacs, grappas and house cocktails: Briseide offers a list designed for true connoisseurs.",
       "es": "Una selección de destilados, licores y gin tonics para disfrutar después de la cena o para concluir la comida con elegancia. Whiskies escoceses, rones selectos, coñacs, grappas y cócteles de la casa: Briseide ofrece una carta pensada para auténticos conocedores."
     }
+  },
+  "cookieBanner": {
+    "text": {
+      "it": "Questo sito utilizza cookie tecnici per offrirti una migliore esperienza di navigazione.",
+      "en": "This site uses technical cookies to enhance your browsing experience.",
+      "es": "Este sitio utiliza cookies técnicas para mejorar tu experiencia de navegación."
+    },
+    "button": {
+      "it": "Ho capito!",
+      "en": "Got it!",
+      "es": "¡Entendido!"
+    }
   }
 }

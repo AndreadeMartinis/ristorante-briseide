@@ -7,6 +7,7 @@ import siteConfig from "./config/site";
 import ScrollToTop from "./components/ScrollToTop";
 import SeoSchema from "./components/SeoSchema";
 import Script from "next/script";
+import CookieBanner from "./components/CookieBanner";
 
 export const metadata = {
   title: siteConfig.name + " - " + siteConfig.slogan,
@@ -72,6 +73,7 @@ export default function RootLayout({ children }) {
           {children}
           <ScrollToTop />
           <Footer />
+          <CookieBanner />
         </LanguageProvider>
       </body>
     </html>
