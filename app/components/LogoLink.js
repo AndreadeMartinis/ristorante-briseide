@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* import Image from "next/image"; */
 import Link from "next/link";
 import icon from "../../public/icon.png";
 import siteConfig from "../config/site";
@@ -11,13 +11,14 @@ export default function LogoLink({ dimension = 50 }) {
       aria-label={`Logo ${siteConfig.name} - Home Page Link`}
       title="Homepage"
     >
-      <Image
+      {/* <Image
         src={icon}
         alt={`Logo ${siteConfig.name}`}
         width={dimension}
         height={dimension}
         priority
-      />
+      /> */}
+      <img src="/icon.png" width={dimension} height={dimension} alt="logo" />
     </Link>
   );
 }

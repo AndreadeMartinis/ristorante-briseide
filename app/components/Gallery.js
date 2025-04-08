@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
+/* import Image from "next/image"; */
 import { motion } from "framer-motion";
-import img1 from "@/public/img/gallery1.jpg";
-import img2 from "@/public/img/gallery2.jpg";
-import img3 from "@/public/img/gallery3.jpg";
-import img4 from "@/public/img/gallery4.jpg";
+import img1 from "@/public/gallery1.jpg";
+import img2 from "@/public/gallery2.jpg";
+import img3 from "@/public/gallery3.jpg";
+import img4 from "@/public/gallery4.jpg";
 import { useTranslation } from "../hooks/useTranslation";
 
 export default function Gallery() {
@@ -28,10 +28,15 @@ export default function Gallery() {
           }`}
         >
           <div className="relative w-full md:w-1/2 h-64 md:h-full overflow-hidden">
-            <Image
+            {/* <Image
               fill
               className={`object-cover ${reverse ? "brightness-75" : ""}`}
               src={img}
+              alt={`piatto_${index + 1}`}
+            /> */}
+            <img
+              src={`/gallery${index + 1}.jpg`}
+              className="object-cover w-full h-full"
               alt={`piatto_${index + 1}`}
             />
           </div>

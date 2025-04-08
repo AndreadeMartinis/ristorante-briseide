@@ -12,7 +12,7 @@ const siteConfig = {
     "Vieni a trovarci nel nostro nuovo ristorante a Balduina in piazza delle Medaglie d'oro 22. Per un pranzo veloce ma di classe durante la pausa lavoro o per una cena romantica, il nostro ristorante propone una scelta di pesce freschissimo e carni pregiate. Briseide, il nuovo ristorante epico a Roma nord!",
 
   openGraph: {
-    image: "/images/icon.png",
+    image: "/icon.png",
     url: "https://www.ristorantebriseide.it",
     type: "website",
   },

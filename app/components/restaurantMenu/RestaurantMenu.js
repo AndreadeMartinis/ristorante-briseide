@@ -47,7 +47,7 @@ export default function RestaurantMenu({ menuType }) {
 
   return (
     <main
-      className={`bg-[url('/img/bg-marble-white.jpg')] bg-contain md:bg-none ${
+      className={`bg-[url('/bg-marble-white.jpg')] bg-contain md:bg-none ${
         menuType === "special" ? "mt-12" : "mt-24"
       }`}
     >
