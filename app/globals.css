@@ -91,6 +91,9 @@ html::-webkit-scrollbar-thumb {
   outline: 2px solid var(--text-color);
   background-color: var(--secondary-color);
 }
+.bordered-box:last-child span {
+  display: none;
+}
 
 .whatsapp-button,
 .quandoo-button {
