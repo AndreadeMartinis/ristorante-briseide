@@ -53,9 +53,14 @@
       "es": "Información"
     },
     "openingHours": {
-      "it": ["Orari di apertura", "Pranzo", "Cena", "Domenica chiuso"],
-      "en": ["Opening hours", "Lunch", "Dinner", "Close on Sunday"],
-      "es": ["Horarios de apertura", "Almuerzo", "Cena", "Cerrado los domingos"]
+      "it": ["Orari di apertura", "Pranzo", "Cena", "Domenica chiuso a cena"],
+      "en": ["Opening hours", "Lunch", "Dinner", "Close on Sunday evening"],
+      "es": [
+        "Horarios de apertura",
+        "Almuerzo",
+        "Cena",
+        "Cerrado el domingo por la noche"
+      ]
     }
   },
   "menu-tree": {

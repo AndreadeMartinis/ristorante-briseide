@@ -43,7 +43,7 @@ const siteConfig = {
   openingHours: {
     lunch: "12:30–15:30",
     dinner: "19:00–23:00",
-    closed: "Domenica chiuso",
+    closed: "Domenica chiuso a cena",
   },
 
   legal: {
