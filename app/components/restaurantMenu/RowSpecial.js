@@ -11,8 +11,10 @@ export default function RowSpecial({ name, details, language }) {
     .map((k) => details[k]);
 
   return (
-    <div className="flex flex-col justify-center text-center border-b pt-2 pb-4 last-of-type:border-none md:w-3/4">
-      <h3 className="font-semibold text-xl md:text-3xl pb-2">{label}</h3>
+    <div className="bordered-box flex flex-col justify-center text-center border-b py-8 last-of-type:border-none last-of-type:outline-none md:w-3/4">
+      <h3 className="font-semibold text-xl md:text-3xl pb-2 uppercase">
+        {label}
+      </h3>
       {items.map((item, index) => (
         <p key={index} className="text-[.85rem] md:text-base italic pt-2">
           {capitalizeFirstLetter(item)}

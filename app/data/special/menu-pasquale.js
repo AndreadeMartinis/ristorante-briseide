@@ -4,9 +4,9 @@ const categoryTranslation = {
 };
 
 const data = {
-  "Antipasto misto a persona": {
-    en: "Mixed appetizer per person",
-    es: "Aperitivo mixto por persona",
+  Antipasti: {
+    en: "Appetizers",
+    es: "Aperitivos",
     item1_it: "corallina e pizza pasquale al formaggio di nostra produzione",
     item1_en:
       "Easter cheese bread and salami (corallina) of our own production",
