@@ -10,7 +10,10 @@ export default function RowPortate({ name, details, language }) {
       <span className="mr-1">
         {description ? (
           <>
-            <h3>{capitalizeFirstLetter(name)}</h3>
+            <h3>
+              {name && <span className="text-sm">💠</span>}
+              {capitalizeFirstLetter(name)}
+            </h3>
             <p className="text-sm italic">
               {capitalizeFirstLetter(description)}
               {allergeni && <sup className="ml-2">{allergeni}</sup>}
@@ -18,6 +21,7 @@ export default function RowPortate({ name, details, language }) {
           </>
         ) : (
           <p>
+            <span className="text-sm">💠</span>
             {capitalizeFirstLetter(name)}
             <span className="text-sm italic">
               {allergeni && <sup className="ml-2">{allergeni}</sup>}
