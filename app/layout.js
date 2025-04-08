@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import siteConfig from "./config/site";
 import ScrollToTop from "./components/ScrollToTop";
 import SeoSchema from "./components/SeoSchema";
+import Script from "next/script";
 
 export const metadata = {
   title: siteConfig.name + " - " + siteConfig.slogan,
@@ -41,11 +42,28 @@ export default function RootLayout({ children }) {
     <html lang={siteConfig.defaultLanguage}>
       <head>
         <SeoSchema />
+
+        {/* Verifica Search Console */}
         <meta
           name="google-site-verification"
           content="w844wFy3UC767SOXheh-FcB0lpLU3JAjkpUNb7bMAI0"
         />
+
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-LNLRN84P6C"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LNLRN84P6C');
+    `}
+        </Script>
       </head>
+
       <body
         className={`${fontCursive.variable} ${fontText.variable} ${fontMenuRow.variable} antialiased`}
       >
