@@ -22,7 +22,7 @@ export default function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-secondaryTransparent text-textColor px-4 py-3 text-sm flex flex-col md:flex-row justify-between items-center z-50 shadow-md backdrop-blur">
+    <div className="fixed bottom-0 left-0 right-0 bg-secondaryTransparent text-textColor px-4 py-3 text-sm flex flex-col md:flex-row justify-between items-center z-50 shadow-md backdrop-blur border-t border-textColor">
       <p className="mb-2 md:mb-0">{t("cookieBanner.text")}</p>
       <button
         onClick={acceptCookies}
