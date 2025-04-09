@@ -14,7 +14,7 @@ export default function SeoSchema() {
     telephone: "+39 06 2253 8933",
     url: "https://www.ristorantebriseide.it",
     servesCuisine: ["Italiana", "Pesce", "Carne"],
-    priceRange: "€€",
+    priceRange: "€€€",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
