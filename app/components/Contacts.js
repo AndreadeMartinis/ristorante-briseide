@@ -12,8 +12,7 @@ import SeoParagraph from "./SeoParagraph";
 export default function Contacts() {
   const { t } = useTranslation();
 
-  const googleMapSrc =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.56451510577!2d12.44678270820501!3d41.92371954942993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f609b02807367%3A0x3d2d696a4c0e1622!2sPiazzale%20delle%20Medaglie%20d'Oro%2C%2022%2C%2000136%20Roma%20RM!5e0!3m2!1sit!2sit!4v1718173246551!5m2!1sit!2sit";
+  const googleMapSrc = siteConfig.map.embedUrl;
 
   return (
     <section

@@ -25,6 +25,13 @@ const siteConfig = {
     full: "Piazzale delle Medaglie d’Oro 22/23, 00136 Roma (RM)",
   },
 
+  map: {
+    embedUrl:
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2968.5414123412534!2d12.4437367!3d41.9242161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f610072db699f%3A0xa88ef079251cd7c2!2sRistorante%20Briseide!5e0!3m2!1sit!2sit!4v1744197880850!5m2!1sit!2sit",
+    linkUrl:
+      "https://www.google.com/maps/place/Ristorante+Briseide/@41.9242161,12.4437367,17z/data=!4m7!3m6!1s0x132f610072db699f:0xa88ef079251cd7c2!4b1!8m2!3d41.9236461!4d12.446728!16s%2Fg%2F11w3yks2gl?entry=ttu",
+  },
+
   contact: {
     phone: "+390622538933",
     mobile: "+393335333070",
