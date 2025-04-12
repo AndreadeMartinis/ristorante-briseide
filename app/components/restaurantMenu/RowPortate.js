@@ -1,6 +1,7 @@
 import { capitalizeFirstLetter } from "@/app/utils/string";
 
 export default function RowPortate({ name, details, language }) {
+  const translatedName = details?.[language] || name; // fallback a name se non c'è traduzione
   const description = details[`descr_${language}`];
   const price = details.prezzo;
   const allergeni = details.allergeni;
@@ -12,7 +13,7 @@ export default function RowPortate({ name, details, language }) {
           <>
             <h3>
               {name && <span className="md:text-sm text-[.75rem]">💠 </span>}
-              {capitalizeFirstLetter(name)}
+              {capitalizeFirstLetter(translatedName)}
             </h3>
             <p className="text-sm italic">
               {capitalizeFirstLetter(description)}
@@ -22,7 +23,7 @@ export default function RowPortate({ name, details, language }) {
         ) : (
           <p>
             <span className="md:text-sm text-[.75rem]">💠 </span>
-            {capitalizeFirstLetter(name)}
+            {capitalizeFirstLetter(translatedName)}
             <span className="text-sm italic">
               {allergeni && <sup className="ml-2">{allergeni}</sup>}
             </span>
